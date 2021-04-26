@@ -31,6 +31,7 @@ computer_hand = []
 game_state = "y"
 card_draw = ""
 
+
 def deal_card():
     return random.choice(cards)
 
@@ -129,6 +130,7 @@ def core_game_loop():
 
 core_game_loop()
 
+# This is a test comment in the file
 
 
 
