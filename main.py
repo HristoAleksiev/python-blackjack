@@ -10,9 +10,15 @@
 ## Cards are not removed from the deck as they are drawn.
 ## The computer is the dealer.
 
-from replit import clear
+# from replit import clear
 from art import logo
 import random
+import os
+
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 final_results = {
     "PlayerOver": "You went Over, you Lose! :(",
@@ -35,11 +41,13 @@ card_draw = ""
 def deal_card():
     return random.choice(cards)
 
+
 def sum_score(hand):
     total = 0
     for card in hand:
         total += card
     return total
+
 
 def reset_game():
     global player_hand
@@ -52,10 +60,12 @@ def reset_game():
     game_state = "y"
     card_draw = ""
 
+
 def print_score(player_hand, computer_hand,result_message):
     print(f"Your final hand: {player_hand}, final score: {sum_score(player_hand)}")
     print(f"Computer's final hand: {computer_hand}, final score: {sum_score(computer_hand)}")
     print(final_results[result_message])
+
 
 def game_mechanics(player_score, computer_score):   
     global card_draw
@@ -104,6 +114,7 @@ def game_mechanics(player_score, computer_score):
             computer_score = sum_score(computer_hand)
         game_mechanics(player_score, computer_score)
 
+
 def core_game_loop():
     
     reset_game()
@@ -127,6 +138,7 @@ def core_game_loop():
     game_mechanics(player_score, computer_score)
 
     core_game_loop()
+
 
 core_game_loop()
 
