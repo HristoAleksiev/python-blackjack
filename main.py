@@ -141,26 +141,3 @@ def core_game_loop():
 
 
 core_game_loop()
-
-# This is a test comment in the file
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
