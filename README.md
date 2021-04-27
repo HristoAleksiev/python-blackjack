@@ -2,7 +2,7 @@
 
 Python excercise building a Blackjack game running in terminal.
 
-###Our Blackjack House Rules
+### Our Blackjack House Rules
 
  - The deck is unlimited in size.
  - There are no jokers.
