@@ -1,6 +1,6 @@
 # Solution for python-blackjack excercise
 
-Python excercise building a Blackjack game running in terminal.
+Python exercise building a Blackjack game running in terminal.
 
 ### Our Blackjack House Rules
 
